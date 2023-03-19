@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <input type="text" name="opera" class="opera">
+            <div class="result"></div>
+        </div>
+        <div class="body">
+            <div class="buttons">
+                <button class="buttons-rows" id="red" onclick="reset()">C</button>
+                <button class="buttons-rows" id="gree" onclick="show('%')">%</button>
+                <button class="buttons-rows" id="gree" onclick="show('.')">.</button>
+                <button class="buttons-rows" id="yellow" onclick="pop()"><ion-icon name="backspace-outline"></ion-icon></button>
+            </div>
+            <div class="buttons">
+                <button class="buttons-rows" onclick="show('7')">7</button>
+                <button class="buttons-rows" onclick="show('8')">8</button>
+                <button class="buttons-rows" onclick="show('9')">9</button>
+                <button class="buttons-rows" id="gree" onclick="show('*')">x</button>
+            </div>
+            <div class="buttons">
+                <button class="buttons-rows" onclick="show('4')">4</button>
+                <button class="buttons-rows" onclick="show('5')">5</button>
+                <button class="buttons-rows" onclick="show('6')">6</button>
+                <button class="buttons-rows" id="gree" onclick="show('-')">-</button>
+            </div>
+            <div class="buttons">
+                <button class="buttons-rows" onclick="show('1')">1</button>
+                <button class="buttons-rows" onclick="show('2')">2</button>
+                <button class="buttons-rows" onclick="show('3')">3</button>
+                <button class="buttons-rows" id="gree" onclick="show('+')">+</button>
+            </div>
+            <div class="buttons">
+                <button class="buttons-rows" id="gree" onclick="change()">+/-</button>
+                <button class="buttons-rows" onclick="show('0')">0</button>
+                <button class="buttons-rows" id="gree" onclick="show('/')">/</button>
+                <button class="buttons-rows" id="final">=</button>
+            </div>
+            
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
