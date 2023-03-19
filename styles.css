@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 20% 80%;
     width: 90%;
+    box-sizing: border-box;
 }
 .header{
     min-height: 30vh;
@@ -72,7 +73,8 @@
 }
 @media (max-width: 800px){
    *{
+
         width: 99%;
         margin: 0 auto;
+        box-sizing: border-box;;
    }
-}
