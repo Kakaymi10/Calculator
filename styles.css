@@ -1,0 +1,72 @@
+.conatainer{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    width: 90%;
+}
+.header{
+    min-height: 30vh;
+    border: 1px solid black;
+    width: 70%;
+    max-width: 350px;
+    display: grid;
+    grid-template-rows: 60% 40%;
+    border-radius: 10px;
+
+}
+.opera{
+    z-index: 99;
+    font-size: 20px;
+    box-shadow: 0px 3px 5px black;
+    padding-top: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.result{
+    padding-top: 25px;
+    font-size: 30px;
+    background-color: rgb(236, 236, 236);
+    border-radius: 10px;
+}
+#red{
+    color: red;
+}
+#yellow{
+    color: rgb(73, 73, 9);
+}
+
+#gree{
+    color: green;
+}
+#final{
+    background-color: green;
+    color: white;
+}
+.body{
+    border: 2px solid black;
+    min-height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    max-width: 350px;
+    border-radius: 10px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    gap: 2px;
+}
+.buttons-rows{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50px;
+    margin-top: 4px;
+    font-size: 40px;
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+}
+.buttons-rows:active{
+    background-color: rgb(81, 80, 80);
+}
