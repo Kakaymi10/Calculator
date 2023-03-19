@@ -37,10 +37,10 @@ function change(){
     }
 }
 $("#final").click(function(){
-    $(".opera").hide(1000);
+    $(".opera").hide(200);
     $('.result').css({"border":"none"})
 })
 
 function showing(){
-    $('.opera').show(1000);
+    $('.opera').show(200);
 }
